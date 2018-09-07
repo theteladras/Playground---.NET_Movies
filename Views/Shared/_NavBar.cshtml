@@ -1,0 +1,27 @@
+﻿<nav class="navbar navbar-expand-lg navbar-light bg-light" style="position:absolute; top:0; left:0; right: 0;">
+	@Html.ActionLink("hooliee", "Index", "home", new { area = "" }, new { @class = "navbar-brand" })
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarColor03">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+				@Html.ActionLink("Customers", "Index", "Customers", null, new { @class = "nav-link" })
+			</li>
+			<li class="nav-item">
+				@Html.ActionLink("Movies", "Index", "Movies", null, new { @class = "nav-link" })
+			</li>
+		</ul>
+	</div>
+	<div>
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+				@Html.ActionLink("Register", null, null, new { @class = "nav-link" })
+			</li>
+			<li class="nav-item">
+				@Html.ActionLink("Log in", null, null, new { @class = "nav-link" })
+			</li>
+		</ul>
+	</div>
+</nav>

@@ -1,0 +1,28 @@
+﻿@model IEnumerable<hooliee.Models.Movie>
+
+@{
+	ViewBag.Title = "Movies";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Movies</h2>
+
+<table class="table table-bordered table-hover">
+	<thead class="thead-dark">
+		<tr>
+			<th>
+				Movie
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var mov in Model)
+		{
+			<tr>
+				<td scope="row">
+					@mov.Name
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
