@@ -14,16 +14,18 @@ else
 {
 	<table class="table table-bordered table-hover">
 		<thead class="thead-dark">
-			<tr>
-				<th scope="col">Customer</th>
-			</tr>
+            <tr>
+                <th scope="col">Customer</th>
+                <th scope="col">Discount rate</th>
+            </tr>
 		</thead>
 		<tbody>
 			@foreach (var customer in Model)
 			{
-				<tr scope="row">
-					<td>@Html.ActionLink(customer.Name, "Details", "Customers", new { id = customer.Id }, null)</td>
-				</tr>
+            <tr scope="row">
+                <td>@Html.ActionLink(customer.Name, "Details", "Customers", new { id = customer.Id }, null)</td>
+                <td>@customer.GetMembershipType.DiscountRate%</td>
+            </tr>
 			}
 		</tbody>
 	</table>
