@@ -105,3 +105,5 @@ C:\Users\samsung pc\Documents\cSharp\hooliee\hooliee\hooliee\obj\Debug\hooliee.M
 C:\Users\samsung pc\Documents\cSharp\hooliee\hooliee\hooliee\obj\Debug\hooliee.Migrations.InitialModel1.resources
 C:\Users\samsung pc\Documents\cSharp\hooliee\hooliee\hooliee\obj\Debug\hooliee.Migrations.InitialModel2.resources
 C:\Users\samsung pc\Documents\cSharp\hooliee\hooliee\hooliee\obj\Debug\hooliee.Migrations.ApplyAnnotationsToCustomerName.resources
+C:\Users\samsung pc\Documents\cSharp\hooliee\hooliee\hooliee\obj\Debug\hooliee.Migrations.AddNameToMembershipType.resources
+C:\Users\samsung pc\Documents\cSharp\hooliee\hooliee\hooliee\obj\Debug\hooliee.Migrations.SetNameOfMembershipTypes.resources

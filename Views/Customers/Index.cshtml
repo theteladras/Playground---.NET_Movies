@@ -1,32 +1,32 @@
 ﻿@model IEnumerable<hooliee.Models.Customer>
 @{
 
-	ViewBag.Title = "Customers";
-	Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Customers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>Customers</h2>
 @if (!Model.Any())
 {
-	<p>We don't have any customers yet.</p>
+    <p>We don't have any customers yet.</p>
 }
 else
 {
-	<table class="table table-bordered table-hover">
-		<thead class="thead-dark">
+    <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
             <tr>
                 <th scope="col">Customer</th>
-                <th scope="col">Discount rate</th>
+                <th scope="col">Membership type</th>
             </tr>
-		</thead>
-		<tbody>
-			@foreach (var customer in Model)
-			{
-            <tr scope="row">
-                <td>@Html.ActionLink(customer.Name, "Details", "Customers", new { id = customer.Id }, null)</td>
-                <td>@customer.GetMembershipType.DiscountRate%</td>
-            </tr>
-			}
-		</tbody>
-	</table>
+        </thead>
+        <tbody>
+            @foreach (var customer in Model)
+            {
+                <tr scope="row">
+                    <td>@Html.ActionLink(customer.Name, "Details", "Customers", new { id = customer.Id }, null)</td>
+                    <td>@customer.GetMembershipType.Name</td>
+                </tr>
+            }
+        </tbody>
+    </table>
 }
